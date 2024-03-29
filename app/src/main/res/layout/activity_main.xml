@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id = "@+id/main"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context = ".MainActivity" >
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "80dp"
+        android:gravity="center"
+        android:background="#d2b48c"
+        >
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="যাকাত"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:id="@+id/zakatHisab"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#B0AC86"
+            android:layout_marginRight="10dp"
+            android:padding="7dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width = "100dp"
+                android:layout_height = "110dp"
+                android:src="@drawable/calculate"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="যাকাত হিসাব করুন"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#f5deb3"
+            android:padding="7dp"
+            >
+            <ImageView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                />
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:textStyle="bold"
+                android:text="যাকাত হিসাব করুন"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout >
